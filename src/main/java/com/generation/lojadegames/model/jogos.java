@@ -45,6 +45,10 @@ public class jogos {
 	@ManyToOne
 	@JsonIgnoreProperties("Jogos")
 	private Tema tema;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("Jogos")
+	private Usuario usuario;
 
 	public long getId() {
 		return id;
